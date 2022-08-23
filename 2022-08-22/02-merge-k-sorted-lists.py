@@ -3,9 +3,7 @@ class ListNode:
       self.val = val
       self.next = next
 def mergeKLists(self, lists: list):
-  bucket = dict()
-  for i in range (-1 * (pow(-10,4)), (pow(10,4)+1)):
-    bucket[i] = 0
+  bucket = {x: 0 for x in range (-1 * (pow(10,4)), (pow(10,4)+1))}
 
   for j in lists:
     while j:
